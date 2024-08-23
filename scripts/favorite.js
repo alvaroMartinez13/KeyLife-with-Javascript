@@ -45,7 +45,7 @@ function corazonCambio(event) {
 
     const index = favorites.indexOf(propertyId);
     if (index > -1) {
-      // Eliminar del array de favoritos y propiedades favoritas
+
       favorites.splice(index, 1);
       properties_Favorite.splice(index, 1);
 
@@ -71,7 +71,7 @@ function crearCartas() {
 
   if (favorites.length !== 0) {
     for (let i = 0; i < favorites.length; i++) {
-      cartas += `<a class="card apartamento1 apartamento" style="background-image: url(${properties[i].image_property})">
+      cartas += `<a class="card apartamento1 apartamento" style="background-image: url(${properties[i].image_property}); cursor:pointer">
           <div class="corazon">
             <h1 style="display:none;">${properties[i].id_property}</h1>
             <img src="../images/hearts.png" width="18px" alt="">

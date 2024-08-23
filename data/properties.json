@@ -38,6 +38,12 @@
       "type_service": "Arriendo",
       "rooms_property": 3,
       "services_property": ["Luz", "Agua", "Internet", "Baño"]
+    },
+    {
+
+    },
+    {
+      
     }
   ]
 }

@@ -241,11 +241,11 @@ footer nav li a{
 }
 
 @media (min-width: 768px) {
-    
+
     footer{
         display: none;
     }
-
+    
     .escritorio {
         display: flex;
         justify-content: center;
