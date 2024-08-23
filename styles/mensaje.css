@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #F9F1C6;
+}
+
+header{
+    min-height: 9.71vh;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #F5EAB0;
+    padding: 3vw;
+}
+
+header picture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+header picture #logo{
+    width: 15%;
+    box-shadow: 1rem 0rem 2rem #d3d3d3;
+    border-radius: 10%;
+}
+
+
+header picture #sesion{
+    width: 10%;
+}
+
+.escritorio{
+    display: none;
+}
+
+.banner-message{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3BAB38;
+    min-height: 8vh;
+}
+
+.info-chat{
+    position: relative;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    padding-right: 30px;
+    width:65%;
+    gap: 5px;
+    color: #E4E1E1;
+}
+
+.llamada-chat img{
+    width: 8vw;
+    border-radius: 50%;
+
+}
+
+.mensajeria{
+    display: flex;
+    flex-direction: column;
+    max-height: 60vh;
+    width: 100%;
+}
+
+.pantalla-mensaje{
+    display: flex;
+    flex-direction: column;
+    background-color: #E4E1E1;
+    padding: 10px;
+    min-height: 70vh;
+    gap: 10px;
+    overflow-y: scroll;
+}
+
+.mensaje-ajeno{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #DBF1D0;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.mensaje-ajeno p{
+    font-size: 3.4vw;
+    line-height: 15px;
+}
+
+span{
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    font-size: 3vw;
+    color: #444444;
+}
+
+.mensaje-mio{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 5px;
+    background-color: #f7f7f7;
+    padding: 5px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.escribe-aqui{
+    position: absolute;
+    width: 100%;
+    bottom: 12.6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1.3px solid #e9d364;
+    background-color: #F5EAB0;
+    min-height: 8vh;
+    z-index: 8;
+}
+
+.texto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto input{
+    border: 1px solid #333;
+    width: 80%;
+    height: 3.5vh;
+    justify-self: flex-start;
+}
+
+.texto a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 12.5vw;
+    height: 6vh;
+    background-color: #3BAB38;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    min-height: 80px;
+    width: 100%;
+    background-color: #BDD4FF;
+}
+
+footer nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+footer nav li{
+    display: flex;
+    background-color: #fbfbfc;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+footer nav li a{
+    display: flex;
+}
+
+#seleccionado{
+    background-color: #3BAB38;
+}
+
+@media (min-width: 768px) {
+
+    .escribe-aqui{
+        z-index: 0;
+    }
+
+    .escritorio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding: 0;
+        margin: 0;
+        border: 2px solid #33333393;
+        width: 100%;
+        z-index: 5;
+        background-color: #0F0E3F;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+    }
+
+    .container-escritorio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 40%;
+        transform: translateX(-100%);
+        animation: slideIn 1s forwards;
+        animation-delay: 1s;
+    }
+
+    .container-escritorio img,
+    .container-escritorio h2,
+    .container-escritorio p {
+        opacity: 0;
+        animation: fadeContent 1s forwards;
+        animation-delay: 2s;
+    }
+
+    .container-escritorio h2 {
+        font-size: 5vw;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn {
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeContent {
+        to {
+            opacity: 1;
+        }
+    }
+}

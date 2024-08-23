@@ -1,0 +1,12 @@
+{
+    "users":[
+        {
+            "id_user": 1,
+            "name_user": "Lorena Sanchez",
+            "username": "LoriSa1",
+            "password": "12345",
+            "email_user": "lori@gmail.com",
+            "phone_user": "3025674320"
+        }
+    ]
+}

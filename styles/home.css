@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #F9F1C6;
+}
+
+header{
+    min-height: 9.71vh;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #F5EAB0;
+    padding: 3vw;
+}
+
+header picture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+}
+
+header picture #logo{
+    width: 15%;
+    box-shadow: 1rem 0rem 2rem #d3d3d3;
+    border-radius: 10%;
+}
+
+
+header picture #sesion{
+    width: 10%;
+}
+
+.escritorio{
+    display: none;
+}
+
+.search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 9vh;
+    height: 100%;
+    background-color: #BDD4FF;
+}
+
+.search-bar{
+    position: relative;
+}
+
+
+
+.search-bar #lupa{
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    font-weight: 700;
+}
+
+.search-bar input{
+    height: 8vw;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+}
+
+.search #button-category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(247, 247, 247);
+    padding: 2px 8px;
+    color: #4787FF;
+    text-decoration: none;
+    border-radius: 5%;
+    box-shadow: 1rem 0rem 2rem #d3d3d3;
+}
+
+.search #button-category p{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.categories{
+    display: flex;
+    justify-content: space-around;
+    padding: 3vw;
+    gap: 8px;
+    min-height: 9vh;
+    height: 100%;
+}
+
+.categories a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    color: #4787FF;
+    text-decoration: none;
+    background-color: rgb(247, 247, 247);
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5%;
+    padding: 2px 12px;
+    box-shadow: 1rem 0rem 2rem #d3d3d3;
+}
+
+.sale-rental{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 500vw;
+    min-height: 50vh;
+    width: 100%;
+    padding: 4vw;
+    gap: 12px;
+    background-color: rgb(253, 251, 251);
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 25vh;
+    border-radius: 5%;
+}
+
+.apartamento, .casa{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.corazon{
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    z-index: 3;
+}
+
+.tipo-interes{
+    position: absolute;
+    right: 0;
+    color: white;
+    font-weight: 700;
+}
+
+.tipo-interes p{
+    font-size: .8rem;
+}
+
+.arriendo{
+    padding: 4px;
+    background-color: #FFB155;
+}
+
+.venta{
+    padding: 5px;
+    background-color: #2DB717;
+}
+
+
+.info-inmueble{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color: rgba(32, 32, 32, 0.671);
+    color: #ffffff;
+}
+
+.info-inmueble h3{
+    font-size: .8rem;
+}
+
+.info-inmueble h4{
+    font-size: .7rem;
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    height: 80px;
+    z-index: 5;
+    background-color: #BDD4FF;
+}
+
+footer nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+footer nav li{
+    display: flex;
+    background-color: #fbfbfc;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+footer nav li a{
+    display: flex;
+}
+
+#seleccionado{
+    background-color: #4787FF;
+}
+
+.escritorio{
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    footer{
+        display: none;
+    }
+    
+    .escritorio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding: 0;
+        margin: 0;
+        border: 2px solid #33333393;
+        width: 100%;
+        z-index: 5;
+        background-color: #0F0E3F;
+        opacity: 0;
+        animation: fadeIn 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    }
+
+    .container-escritorio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 40%;
+        transform: translateX(-100%);
+        animation: slideIn 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+        animation-delay: 1s; 
+    }
+
+    .container-escritorio img,
+    .container-escritorio h2,
+    .container-escritorio p {
+        opacity: 0;
+        animation: fadeContent 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+        animation-delay: 2s; 
+    }
+
+    .container-escritorio h2 {
+        font-size: 5vw;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideIn {
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeContent {
+        to {
+            opacity: 1;
+        }
+    }
+}

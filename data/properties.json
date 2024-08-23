@@ -1,0 +1,43 @@
+{
+  "propierties": [
+    {
+      "id_property": "1",
+      "id_owner": "1",
+      "image_property": "https://www.bienesonline.com/colombia/photos/arriendo-apartamento-directo-excelente-san-lorenzo-de-provenza-ii-11507606074.jpg",
+      "name_property": "Entre las nubes",
+      "type_property": "Apartamento",
+      "price_property": 300000,
+      "description_property": "Esto es un apartamento que se visualiza en el 7mo piso.",
+      "owner_property": "Lorena Sanchez",
+      "type_service": "Arriendo",
+      "rooms_property": 3,
+      "services_property": ["Luz", "Agua", "Internet", "Baño"]
+    },
+    {
+      "id_property": "2",
+      "id_owner": "1",
+      "image_property": "https://http2.mlstatic.com/D_NQ_NP_2X_637555-MCO77972590544_082024-E.webp",
+      "name_property": "Apartamento Cana Torre Hayuelos",
+      "type_property": "Apartamento",
+      "price_property": 32500000,
+      "description_property": "Esto es un apartamento que se visualiza en el 7mo piso.",
+      "owner_property": "Lorena Sanchez",
+      "type_service": "Venta",
+      "rooms_property": 3,
+      "services_property": ["Luz", "Agua", "Internet", "Baño"]
+    },
+    {
+      "id_property": "3",
+      "id_owner": "1",
+      "image_property": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnqNAgKpQ-uY_GVmPiMFhP7jWTjL9RwX0bx0NKaxkdtD1oB7tz",
+      "name_property": "Apartamento Cana Torre Hayuelos",
+      "type_property": "Apartamento",
+      "price_property": 32500000,
+      "description_property": "Esto es un apartamento que se visualiza en el 7mo piso.",
+      "owner_property": "Lorena Sanchez",
+      "type_service": "Arriendo",
+      "rooms_property": 3,
+      "services_property": ["Luz", "Agua", "Internet", "Baño"]
+    }
+  ]
+}
