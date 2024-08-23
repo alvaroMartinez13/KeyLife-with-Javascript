@@ -26,6 +26,7 @@ búsqueda certera de la ubicación donde se desea solicitar el servicio, destaca
 ## 💻 Tecnologías
 - HTML
 - CSS
+- Javascript
 
 ## 📚 Desarrollo
 - 🧿 Diseño de Mockups.
@@ -40,16 +41,10 @@ Se planteó en primera instancia el desarrollo de vistas específicas para el in
 la realización de los mockups.
 
 - 🧬 Avances.
-Se presentó las tareas asignadas como fueron las vistas solicitadas para el inicio del proyecto, en donde se respetaron de los lineamientos acordados. En donde se 
-cumplió a cabalidad y preparando el ingreso de nuevas tareas para optimizar con la ayuda de funcionalidades.
-La aplicación se realizó un login donde el usuario pueda ingresar a la aplicación; la vista principal de la aplicación y presentando lo solicitado como la 
-categorización de la solicitud que se desea buscar o centrar la ubicación de interés; Destacar las ofertas de interés que se encuentran en su sitio destino o de 
-origen;estructuración del contenido que maneja una oferta desde la propiedad hasta sus servicios; presentación de un chat directo para contactar con el propietario.
+Se adicionó el Javascript y se le ajustó Favoritos y filtro de Propiedades y se incluyó dimensión Escritorio. 
 
 - 👟 Paso a Seguir.
-Definir los mockups restantes cómo son la creación de ofertas, donde se plantea la oportunidad de visualizar las ofertas creadas, editar las ofertas y su creación; la
-visualización de la sección de configuración con todo lo solicitado para optimizar el uso de la aplicación. Implementar en próxima ocasión el uso de la tecnología 
-Javascript, donde se otorgue las funcionalidades y convertir el uso de la plataforma estática a dinámica.  
+Culminar con el proceso de la integración Javascript y crear una API o uso de BD para mantener los datos.
 
 ## 📒 Contacto
 - LinkedIn: www.linkedin.com/in/alvaro-andres-martinez-alcina-4a0976316
